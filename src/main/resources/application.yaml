@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: azure_cosmos_demo
+  server:
+    servlet:
+      context-path: /yasuo
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+azure:
+  cosmos:
+    uri: https://localhost:8081
+    database: UserCosmosDemo
+    key: C2y6yDjf5/R+ob0N8A7Cgv30VRDJIWEHLM+4QDU5DE2nQ9nDuVTqobD4b8mGGyPMbIZnqyMsEcaGQy67XIw/Jw==
+    populateQueryMetrics: true
